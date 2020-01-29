@@ -4,19 +4,21 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel=“stylesheet”
     href=“node_modules/bootstrap/dist/css/bootstrap.min.css” />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>NuCamp: A Better Way To Camp</title>
   </head>
 
   <body>
-    <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron jumbotron-fluid" id="header">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1>NuCamp</h1>
-            <h2>a better way to camp</h2>
+            <h1 id="txt-title">NuCamp</h1>
+            <h2 id="txt-sub-title">a better way to camp</h2>
           </div>
         </div>
       </div>
@@ -25,12 +27,12 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>About Us</h2>
-          <hr />
+          <h2 id="txt-about-us">About Us</h2>
+          <hr>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="margin-top-bot">
         <div class="col-sm-6">
           <h3>Our Mission</h3>
           <p>
@@ -44,8 +46,8 @@
           </p>
         </div>
       </div>
-
-      <div class="row">
+      <hr>
+      <div class="row" id="margin-top-bot">
         <div class="col-12">
           <h3>Community Partners</h3>
           <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
@@ -76,7 +78,7 @@
       </div>
     </div c>
 
-    <footer>
+    <footer  id="padding-top-bot">
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-2 offset-1">
@@ -107,7 +109,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-    for(i = 0; 0 <= 4; i++){
+    for(i = 1; 1 <= 4; i++){
     document.getElementsByTagName("p")[i].setAttribute("class", "d-none d-sm-block");
     }
     </script>

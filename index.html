@@ -4,10 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    
-    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link rel=“stylesheet”
     href=“node_modules/bootstrap/dist/css/bootstrap.min.css” />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <title>NuCamp: A Better Way To Camp</title>
   </head>
 
@@ -16,8 +25,8 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1>NuCamp</h1>
-            <h2>a better way to camp</h2>
+            <h1 id="txt-title">NuCamp</h1>
+            <h2 id="txt-sub-title">a better way to camp</h2>
           </div>
         </div>
       </div>
@@ -26,7 +35,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 order-sm-last col-md-3">
-            <h2>Discover & Review</h2>
+          <h2>Discover & Review</h2>
         </div>
         <div class="col">
           <h3>Our Campsites</h3>
@@ -94,5 +103,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      for (i = 0; 0 <= 2; i++) {
+        document
+          .getElementsByTagName("p")
+          [i].setAttribute("class", "d-none d-sm-block");
+      }
+    </script>
   </body>
 </html>

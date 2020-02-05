@@ -6,7 +6,12 @@
 } */
 
 * {
-  padding: 0.3%;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
 }
 
 h1,
@@ -23,9 +28,17 @@ footer {
   background-image: linear-gradient(#aa95f8, #fff);
 }
 
-#header {
-  padding-left: 3rem;
+.jumbotro{
+  margin: 0;
 }
+
+.navbar {
+  background-color: #901CAD;
+}
+
+/* #header {
+  padding-left: 3rem;
+} */
 
 #txt-title {
   color: #fff;

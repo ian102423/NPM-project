@@ -5,6 +5,18 @@
     url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 } */
 
+@font-face {
+  font-family: Europa;
+  font-weight: 400;
+  src: url("./fonts/Europa-Family/Europa-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Futura;
+  font-weight: 400;
+  src: url("./fonts/Futura-Family/FUTURAM.TTF") format("truetype");
+}
+
 * {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +29,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Lobster", cursive;
+  font-family: Europa;
 }
 
 header {

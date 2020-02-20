@@ -1,139 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lobster"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-    rel=“stylesheet”href=“node_modules/bootstrap/dist/css/bootstrap.min.css” />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
+    <link rel=“stylesheet”href=“node_modules/bootstrap/dist/css/bootstrap.min.css” />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="icon" type="image/png" href="./img/logo.png" />
     <title>NuCamp: A Better Way To Camp</title>
-    <style>
-      /* @font-face {
-  font-family: Lobster;
-  font-weight: 400;
-  src: local("Lobster"),
-    url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
-} */
-
+    <style>        
       * {
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
+          font-weight: 400;
+          -webkit-font-smoothing: antialiased;
       }
-
+      
       body {
-        margin: 0;
+          margin: 0;
       }
-
+      
       h1,
       h2,
       h3 {
-        font-family: "Lobster", cursive;
+          font-family:"Lobster", cursive;
       }
-
+      
       header {
-        background-image: linear-gradient(to right, #4219d4, #4c0059);
+          background-image: linear-gradient(to right, #4219d4, #4c0059);
       }
-
+      
       footer {
-        background-image: linear-gradient(#aa95f8, #fff);
+          background-image: linear-gradient(#aa95f8, #fff);
       }
-
+      
       .jumbotro {
-        margin: 0;
+          margin: 0;
       }
-
+      
       .navbar {
-        background-color: #901cad;
+          background-color: #901CAD;
       }
-
-      .tab-content {
-        border: 1px solid #ddd;
-        border-top: none;
-        padding: 10px;
+      
+      .carousel-caption {
+          background-color: rgba(0, 0, 0, 0.5);
       }
-
+      
+      .carousel {
+          border: solid #5637DD;
+      }
+      
       .site-footer {
-        background-image: linear-gradient(#b7a8f8, white);
-        padding: 20px 0px;
+          background-image: linear-gradient(#b7a8f8, white);
+          padding: 20px 0px;
       }
-
       /* #header {
-  padding-left: 3rem;
-} */
-
+    padding-left: 3rem;
+  } */
+      
+      #carousel {
+          margin-top: 3rem;
+      }
+      
+      #carouselButton {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+      }
+      
       #txt-title {
-        color: #fff;
+          color: #fff;
       }
-
+      
       #txt-sub-title {
-        color: #bab0fc;
+          color: #bab0fc;
       }
-
+      
       #margin-top-bot {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
       }
-
+      
       #padding-top-bot {
-        padding-top: 3%;
-        padding-bottom: 3%;
+          padding-top: 3%;
+          padding-bottom: 3%;
       }
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
+<body>
     <header class="jumbotron jumbotron-fluid mb-0" id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-sm-3 col-md-2 align-self-center">
-            <img src="img/logo.png" class="img-fluid" />
-          </div>
-          <div class="col">
-            <h1 id="txt-title">NuCamp</h1>
-            <h2 id="txt-sub-title">a better way to camp</h2>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/logo.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1 id="txt-title">NuCamp</h1>
+                    <h2 id="txt-sub-title">a better way to camp</h2>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="img/logo.png" height="30" width="30"
-        /></a>
-        <button
-          class="navbar-toggler ml-auto"
-          type="button"
-          data-toggle="collapse"
-          data-target="#nucampNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nucampNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                ><i class="fa fa-home fa-lg"></i> Home</a
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a
               >
             </li>
             <li class="nav-item active">
@@ -161,55 +143,47 @@
         <div class="col-12">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">About Us</li>
-          </ol>
-          <h2 id="txt-about-us">About Us</h2>
-          <hr />
-        </div>
-      </div>
-
-      <div class="row row-content">
-        <div class="col-sm-6">
-          <h3>Our Mission</h3>
-          <p>
-            We present a curated database of the best campsites in the vast
-            woods and backcountry of the World Wide Web Wilderness. We increase
-            access to adventure for the public while promoting safe and
-            respectful use of resources. The expert wilderness trekkers on our
-            staff personally verify each campsite to make sure that they are up
-            to our standards. We also present a platform for campers to share
-            reviews on campsites they have visited with each other.
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
-            <div class="card-body">
-              <dl class="row">
-                <dt class="col-6">Founded</dt>
-                <dd class="col-6">February 3, 2016</dd>
-                <dt class="col-6">No. of Campsites in 2019</dt>
-                <dd class="col-6">563</dd>
-                <dt class="col-6">No. of Reviews in 2019</dt>
-                <dd class="col-6">4388</dd>
-                <dt class="col-6">Employees</dt>
-                <dd class="col-6">42</dd>
-              </dl>
+                    <li class="breadcrumb-item active">About Us</li>
+                    </ol>
+                    <h2 id="txt-about-us">About Us</h2>
+                    <hr />
             </div>
-          </div>
         </div>
 
-        <div class="col">
-          <div class="card card-body bg-light mt-3">
-            <blockquote class="blockquote">
-              <p class="mb-0">
-                I will not follow where the path may lead, but I will go where
-                there is no path, and I will leave a trail.
-              </p>
-              <footer class="blockquote-footer">
-                Muriel Strode,
-                <cite title="Source Title"
-                  >"Wind-Wafted Wild Flowers" - The Open Court, 1903</cite
+        <div class="row row-content">
+            <div class="col-sm-6">
+                <h3>Our Mission</h3>
+                <p>
+                    We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Founded</dt>
+                            <dd class="col-6">February 3, 2016</dd>
+                            <dt class="col-6">No. of Campsites in 2019</dt>
+                            <dd class="col-6">563</dd>
+                            <dt class="col-6">No. of Reviews in 2019</dt>
+                            <dd class="col-6">4388</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">42</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-body bg-light mt-3">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">
+                            I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.
+                        </p>
+                        <footer class="blockquote-footer">
+                            Muriel Strode,
+                            <cite title="Source Title">"Wind-Wafted Wild Flowers" - The Open Court, 1903</cite
                 >
               </footer>
             </blockquote>
@@ -382,11 +356,26 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-      for (i = 1; 1 <= 4; i++) {
-        document
-          .getElementsByTagName("p")
-          [i].setAttribute("class", "d-none d-sm-block");
+      for (i = 0; 0 <= 2; i++) {
+          document
+              .getElementsByTagName("p")[i].setAttribute("class","d-none d-sm-block");
       }
-    </script>
+      $(function() {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
+      $(function() {
+      $(".carousel").carousel( { interval: 2000 } );
+      $("#carouselButton").click(function(){
+          if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+              $(".carousel").carousel("pause");
+              $("#carouselButton").children("i").removeClass("fa-pause");
+              $("#carouselButton").children("i").addClass("fa-play");
+          } else {
+              $(".carousel").carousel("cycle");
+              $("#carouselButton").children("i").removeClass("fa-play");
+              $("#carouselButton").children("i").addClass("fa-pause"); 
+          }
+      })});
+  </script>
   </body>
 </html>

@@ -5,18 +5,6 @@
     url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 } */
 
-@font-face {
-  font-family: Europa;
-  font-weight: 400;
-  src: url("./fonts/Europa-Family/Europa-Bold.ttf") format("opentype");
-}
-
-@font-face {
-  font-family: Futura;
-  font-weight: 400;
-  src: url("./fonts/Futura-Family/FUTURAM.TTF") format("truetype");
-}
-
 * {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -29,7 +17,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Europa;
+  font-family: "Lobster", cursive;
 }
 
 header {
@@ -48,32 +36,9 @@ footer {
   background-color: #901CAD;
 }
 
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.carousel {
-  border: solid #5637DD;
-}
-
-.tab-content {
-  border: 1px solid #DDD;
-  border-top: none;
-  padding: 10px;
-}
-
-.site-footer{
-  background-image: linear-gradient(#b7a8f8, white);
-  padding: 20px 0px;
-}
-
 /* #header {
   padding-left: 3rem;
 } */
-
-#carousel {
-  margin-top: 3rem;
-}
 
 #txt-title {
   color: #fff;
@@ -81,6 +46,10 @@ footer {
 
 #txt-sub-title {
   color: #bab0fc;
+}
+
+#txt-about-us {
+  color: #3644c0;
 }
 
 #margin-top-bot {
